@@ -1,0 +1,28 @@
+@mixin hover {
+  @media (hover: hover) { @content; }
+}
+
+// transition
+@mixin ti-1 {
+  transition: .1s linear;
+}
+@mixin ti-15 {
+  transition: .15s linear;
+}
+// Media
+
+@mixin table {
+  @media screen and (max-width: 1024px) { @content; }
+}
+
+@mixin phone-table {
+  @media screen and (max-width: 1024px) and (min-width: 768px) { @content; }
+}
+
+@mixin phone-large {
+  @media screen and (max-width: 767px) { @content; }
+}
+
+@mixin phone-small {
+  @media screen and (max-width: 360px) { @content; }
+}
